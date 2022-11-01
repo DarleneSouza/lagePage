@@ -1,0 +1,97 @@
+body {
+  margin: 100px 80px;
+}
+
+.nav-link {
+  color: #fff;
+  width: 50%;
+  text-align: start;
+}
+
+.nav {
+  --bs-nav-link-hover-color: #fff;
+}
+
+.nav-pills .nav-link.active {
+  --bs-nav-pills-link-active-bg: #c52744;
+}
+
+.logo-menu {
+  max-width: 100%;
+  width: 50%;
+  margin-bottom: 20px;
+  border-radius: 100%;
+  border: #c52744 5px solid;
+}
+
+.color-nav {
+  background-color: #050b2f;
+}
+
+.titulo-menu h1,
+.titulo-menu h2 {
+  color: #fff;
+  font-size: 20px;
+  text-align: start;
+}
+
+.logo-cabecalho {
+  max-width: 100%;
+  width: 65px;
+  border-radius: 50%;
+  margin: 0px 10px;
+  border: #c52744 3px solid;
+}
+.fixo {
+  position: fixed;
+  top: 20px;
+  left: 15px;
+}
+
+.bg-color {
+  background-color: #c52744;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .titulo-menu h1,
+  .titulo-menu h2 {
+    font-size: 15px;
+  }
+
+  .logo-cabecalho {
+    width: 55px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .titulo-menu h1,
+  .titulo-menu h2 {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .logo-cabecalho {
+    width: 50px;
+  }
+
+  .fixo {
+    padding: 0px 3px;
+    top: 20px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .titulo-menu h1,
+  .titulo-menu h2 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .logo-cabecalho {
+    width: 45px;
+  }
+
+  .fixo {
+    padding: 0px 3px;
+    top: 20px;
+  }
+}
