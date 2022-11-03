@@ -1,259 +1,320 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto Robôs para o Ensino</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav class="navbar navbar-dark color-nav fixed-top">
-      <div class="container-fluid mx-5 center-conteiner justify-content-center">
-        <button
-          class="navbar-toggler fixo bg-color"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasDarkNavbar"
-          aria-controls="offcanvasDarkNavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="titulo-menu">
-          <div class="titulo-menu navbar-tex">
-            <h1>ROBÔS PARA O ENSINO:</h1>
-            <h2>Robótica e Automação como Ferramenta Interdisciplinar</h2>
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto Robôs para o Ensino</title>
+  <link rel="icon" type="image/png" href="./img/sem fundo/logo_autobots-removebg-preview.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
 
-        <div>
-          <img
-            class="logo-cabecalho"
-            src="./img/logo_autobots.png"
-            alt="logo-autoboots"
-          />
-          <img class="logo-cabecalho" src="./img/logo_IF.png" alt="logo-if" />
-        </div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
 
-        <div
-          class="offcanvas offcanvas-end color-nav"
-          tabindex="-1"
-          id="offcanvasDarkNavbar"
-          aria-labelledby="offcanvasDarkNavbarLabel"
-        >
-          <div class="offcanvas-header">
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div
-            class="d-flex align-items-start nav flex-column nav-pills p-3 menu"
-            id="v-pills-tab"
-            role="tablist"
-            aria-orientation="vertical"
-          >
-            <div>
-              <img
-                class="logo-menu"
-                src="img/logo_libertaMinas.png"
-                alt="logo"
-              />
-            </div>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-            <button
-              class="nav-link active"
-              id="v-pills-home-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#v-pills-home"
-              type="button"
-              role="tab"
-              aria-controls="v-pills-home"
-              aria-selected="true"
-            >
-              Home
-            </button>
+<body>
+  <nav class="navbar navbar-dark color-nav fixed-top">
+    <div class="container-fluid mx-5 center-conteiner justify-content-center">
+      <button class="navbar-toggler fixo bg-color" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <button
-              class="nav-link"
-              id="v-pills-acoes-do-projeto-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#v-pills-acoes-do-projeto"
-              type="button"
-              role="tab"
-              aria-controls="v-pills-acoes-do-projeto"
-              aria-selected="false"
-            >
-              Ações do Projeto
-            </button>
-
-            <button
-              class="nav-link"
-              id="v-pills-equipe-materiais-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#v-pills-equipe"
-              type="button"
-              role="tab"
-              aria-controls="v-pills-equipe"
-              aria-selected="false"
-            >
-              Equipe
-            </button>
-            <button
-              class="nav-link"
-              id="v-pills-equipe-materiais-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#v-pills-materiais"
-              type="button"
-              role="tab"
-              aria-controls="v-pills-materiais"
-              aria-selected="false"
-            >
-              Materiais
-            </button>
-
-            <button
-              class="nav-link"
-              id="v-pills-tutoriais-aulas-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#v-pills-tutoriais-aulas"
-              type="button"
-              role="tab"
-              aria-controls="v-pills-tutoriais-aulas"
-              aria-selected="false"
-            >
-              Tutoriais e Aulas
-            </button>
-
-            <button
-              class="nav-link"
-              id="v-pills-galeria-fotos-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#v-pills-galeria-fotos"
-              type="button"
-              role="tab"
-              aria-controls="v-pills-galeria-fotos"
-              aria-selected="false"
-            >
-              Galeria de fotos
-            </button>
-
-            <button
-              class="nav-link"
-              id="v-pills-parceiros-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#v-pills-parceiros"
-              type="button"
-              role="tab"
-              aria-controls="v-pills-parceiros"
-              aria-selected="false"
-            >
-              Parceiros
-            </button>
-
-            <button
-              class="nav-link"
-              id="v-pills-contato-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#v-pills-contato"
-              type="button"
-              role="tab"
-              aria-controls="v-pills-contato"
-              aria-selected="false"
-            >
-              Contato
-            </button>
-          </div>
-          <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-            crossorigin="anonymous"
-          ></script>
+      <div class="titulo-menu">
+        <div class="titulo-menu navbar-tex">
+          <h1>ROBÔS PARA O ENSINO:</h1>
+          <h2>Robótica e Automação como Ferramenta Interdisciplinar</h2>
         </div>
       </div>
-    </nav>
-    <div class="tab-content" id="v-pills-tabContent">
-      <div
-        class="tab-pane fade show active"
-        id="v-pills-home"
-        role="tabpanel"
-        aria-labelledby="v-pills-home-tab"
-        tabindex="0"
-      >
-        conteúdo da home
+
+      <div>
+        <img class="logo-cabecalho" src="./img/logo_autobots.png" alt="logo-autoboots" />
+        <img class="logo-cabecalho" src="./img/logo_IF.png" alt="logo-if" />
       </div>
-      <div
-        class="tab-pane fade"
-        id="v-pills-equipe"
-        role="tabpanel"
-        aria-labelledby="v-pills-equipe-tab"
-        tabindex="0"
-      >
-        conteúdo de equpe
-      </div>
-      <div
-        class="tab-pane fade"
-        id="v-pills-materiais"
-        role="tabpanel"
-        aria-labelledby="v-pills-materiais-tab"
-        tabindex="0"
-      >
-        conteúdo de materiais
-      </div>
-      <div
-        class="tab-pane fade"
-        id="v-pills-acoes-do-projeto"
-        role="tabpanel"
-        aria-labelledby="v-pills-acoes-do-projeto-tab"
-        tabindex="0"
-      >
-        conteúdo das ações do projeto
-      </div>
-      <div
-        class="tab-pane fade"
-        id="v-pills-tutoriais-aulas"
-        role="tabpanel"
-        aria-labelledby="v-pills-tutoriais-aulas-tab"
-        tabindex="0"
-      >
-        conteúdo de tutoriais e aulas
-      </div>
-      <div
-        class="tab-pane fade"
-        id="v-pills-contato"
-        role="tabpanel"
-        aria-labelledby="v-pills-contato-tab"
-        tabindex="0"
-      >
-        conteúdo de contato
-      </div>
-      <div
-        class="tab-pane fade"
-        id="v-pills-galeria-fotos"
-        role="tabpanel"
-        aria-labelledby="v-pills-galeria-fotos-tab"
-        tabindex="0"
-      >
-        conteúdo da galeria de fotos
-      </div>
-      <div
-        class="tab-pane fade"
-        id="v-pills-parceiros"
-        role="tabpanel"
-        aria-labelledby="v-pills-parceiros-tab"
-        tabindex="0"
-      >
-        conteúdo de parceiros
+
+      <div class="offcanvas offcanvas-end color-nav" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="d-flex align-items-start nav flex-column nav-pills p-3 menu" id="v-pills-tab" role="tablist"
+          aria-orientation="vertical">
+          <div>
+            <img class="logo-menu" src="img/logo_libertaMinas.png" alt="logo" />
+          </div>
+
+          <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+            type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+            Home
+          </button>
+
+          <button class="nav-link" id="v-pills-acoes-do-projeto-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-acoes-do-projeto" type="button" role="tab" aria-controls="v-pills-acoes-do-projeto"
+            aria-selected="false">
+            Ações do Projeto
+          </button>
+
+          <button class="nav-link" id="v-pills-equipe-materiais-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-equipe" type="button" role="tab" aria-controls="v-pills-equipe"
+            aria-selected="false">
+            Equipe
+          </button>
+          <button class="nav-link" id="v-pills-equipe-materiais-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-materiais" type="button" role="tab" aria-controls="v-pills-materiais"
+            aria-selected="false">
+            Materiais
+          </button>
+
+          <button class="nav-link" id="v-pills-tutoriais-aulas-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-tutoriais-aulas" type="button" role="tab" aria-controls="v-pills-tutoriais-aulas"
+            aria-selected="false">
+            Tutoriais e Aulas
+          </button>
+
+          <button class="nav-link" id="v-pills-galeria-fotos-tab" data-bs-toggle="pill"
+            data-bs-target="#v-pills-galeria-fotos" type="button" role="tab" aria-controls="v-pills-galeria-fotos"
+            aria-selected="false">
+            Galeria de fotos
+          </button>
+
+          <button class="nav-link" id="v-pills-parceiros-tab" data-bs-toggle="pill" data-bs-target="#v-pills-parceiros"
+            type="button" role="tab" aria-controls="v-pills-parceiros" aria-selected="false">
+            Parceiros
+          </button>
+
+          <button class="nav-link" id="v-pills-contato-tab" data-bs-toggle="pill" data-bs-target="#v-pills-contato"
+            type="button" role="tab" aria-controls="v-pills-contato" aria-selected="false">
+            Contato
+          </button>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+          crossorigin="anonymous"></script>
       </div>
     </div>
-  </body>
+  </nav>
+  <div class="tab-content" id="v-pills-tabContent">
+    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
+      tabindex="0">
+
+      <div class="conteiner">
+        <div class="slider">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div>
+                <h1>Grupo de Robótica : </h1>
+                <ul>
+                  <li>
+                    <a href="#sobre">Conheça o Grupo de Ensino Autobots</a>
+                  </li>
+                  <li>
+                    <a href="#missao">Nossa Missão e Objetivos</a>
+                  </li>
+                  <li>
+                    <a href="#estrutura">Nossa Estrutura</a>
+                  </li>
+                  <li>
+                    <div class="siga">
+                      Siga-nos Nas Redes Sociais: <div><a
+                          href="https://instagram.com/autobotsifmachado?igshid=YmMyMTA2M2Y=" target="_blank"
+                          rel="noopener noreferrer"><img src="./img/instagram.png" width="32px"></div></a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="img_slider">
+                <img src="./img/sem fundo/logo_autobots-removebg-preview.png" alt="logo_autobots">
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="slider-txt">
+                <h1 id="if"><b>Instituto Federal Do Sul de Minas Gerais</b></h1>
+                <h3>Alunos Responsáveis pelo Projeto do Site:</h3>
+                <div class="equipe">
+                  <div>
+                  <img class="fotoequipe" src="./fotos/Luis.jpg">
+                  <p>Luís Henrique Freire</p>
+                  </div>
+                  <div>
+                    <img class="fotoequipe" src="./fotos/day.jpg">
+                    <p>Dayane</p>
+                  </div>
+                  <div>
+                    <img class="fotoequipe" src="./fotos/ivam.jpeg">
+                    <p>Ivam Novais</p>
+                  </div>
+                  <div>
+                    <img class="fotoequipe" src="./fotos/darlene.jpeg">
+                    <p>Darlene Souza</p>
+                  </div>
+                </div>
+              </div>
+              <img src="./img/sem fundo/logo_IF-removebg-preview.png" alt="logo_IF">
+            </div>
+
+            <div class="item">
+              <div class="slider-txt">
+                <h1>Emenda Liberta Minas</h1>
+                <p>Através da emenda parlamentar Liberta Minas aprovada no início de 2022, 
+                  o projeto Autobots de robótica e automação ganhou força e obteve diversas aquisições
+                que complementaram o projeto e sobretudo o aprendizado de seus participantes sejam eles internos ou externos à instituição.</p>
+              </div>
+              <img src="./img/sem fundo/logo_libertaMinas-removebg-preview.png" alt="logo_libertaMinas">
+            </div>
+          </div>
+        </div>
+
+        <div class="txt-home">
+          <div>
+            <img src="./img/sem fundo/logo_autobots-removebg-preview.png">
+          </div>
+          <div>
+            <h2 id="sobre">O Grupo Autobots: </h2>
+            <p>
+              Iniciado no ano de 2017 e coordenado desde então pelo professor e coordenador do curso de Sistemas de
+              Informação
+              no Instituto Federal do Sul de Minas Gerais Matheus Eloy Franco;
+              <br><br>
+              Tem como proposta Desenvolver atividades de iniciação a automação utilizando a plataforma de prototipagem
+              Arduino e de introdução a robótica utilizando o kit Lego MindStorms;
+              <br><br>
+              Como elas auxiliam a comunidade?<br>
+              As atividades desenvolvidas permitiram o grupo a participar de projetos de inovação do próprio campus,
+              auxiliando na automação de processos junto a área de agropecuária. Além disto o mesmo ministra cursos
+              acerca dos temas para a comunidade interna do campus e externa, difundindo conceitos importantes como o
+              pensamento computacional e a cultura maker.
+              <br><br>
+              Para os alunos envolvidos a participação neste projeto é importante pois os permite a trabalhar conceitos
+              que não fazem parte suas matrizes curriculares, além disto segundo um levantamento realizado com os mesmo,
+              a participação no grupo os motiva a continuar no curso e na área de computação, além de poderem visualizar
+              de forma prática a aplicação de alguns conceitos abstratos.
+            </p>
+          </div>
+        </div>
+
+        <div class="txt-home">
+          <div>
+            <h2 id="missao">Nossa Missão e Objetivo: </h2>
+            <p>
+            <h5>O projeto Robôs para Ensino, tem como Missão:</h5>
+            <br>
+            <ul>
+              <li>
+                Mostrar a importância da robótica como ferramenta auxiliar no aprendizado dos alunos;
+              </li>
+              <li>
+                E que eles podem ser criadores de novas tecnologias inovadoras.
+              </li>
+            </ul>
+            Nosso objetivo é expor essas informações através de uma pagina web de maneira acessível ao Liberta Minas
+            que fomenta o projeto, para que possa ver o investimento que está sendo feito.
+            <br><br>
+            <h5> Dentre nossas atividades estão:</h5>
+            <br>
+            <ul>
+              <li>
+                Estudar conceitos de tópicos relacionados a robótica e automação
+              </li>
+              <li>
+                Testar sensores e componentes para automação
+              </li>
+              <li>
+                Implementar diferentes protótipos de automação baseados em Arduino
+              </li>
+              <li>
+                Implementar modelos de robôs móveis baseados no kit Lego
+              </li>
+              <li>Desenvolver e aplicar cursos FIC para alunos internos e externos à instituição.</li>
+            </ul>
+            </p>
+          </div>
+          <div>
+            <img src="fotos/foto autobots.png">
+          </div>
+        </div>
+
+        <div class="txt-home">
+          <div>
+            <img src="./img/estrutura.png">
+          </div>
+          <div>
+            <h2 id="estrutura">Nossa Estrutura: </h2>
+            <p>
+              Temos à disposição para uso nos projetos diversos equipamentos e ferramentas.<br>
+              tais como:
+            <ul>
+              <li>Impressoras 3D;</li>
+              <li>Notebooks para pesquisa e desenvolvimento das atividades;</li>
+              <li>Diversas placas e componentes eletrônicos relacionádos à robótica</li>
+              <li>Laboratório de pesquisa exclusivo para encontros dos grupo</li>
+              <li>Diversos robos programáveis e modulares da Lego - MindStorms</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $(".owl-carousel").owlCarousel();
+        });
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+          loop: true, //deixa ele rodando eternament
+          autoplay: true, // fica rodando sozinho
+          autoplayTimeout: 200000, // tempo em que gira e para trocando imgs
+          autoplayHoverPause: true, // no hover ele para de rodar
+          responsive: {
+            0: {
+              items: 1 // 2 img em telas até 767px
+            },
+            768: {
+              items: 1 // 3 img em telas maiores que 768px
+            },
+            992: {
+              items: 1 // 5 img em telas maiores que 992px
+            }
+          }
+        });
+      </script>
+    </div>
+
+    <div class="tab-pane fade" id="v-pills-equipe" role="tabpanel" aria-labelledby="v-pills-equipe-tab" tabindex="0">
+      conteúdo de equpe
+    </div>
+    <div class="tab-pane fade" id="v-pills-materiais" role="tabpanel" aria-labelledby="v-pills-materiais-tab"
+      tabindex="0">
+      conteúdo de materiais
+    </div>
+    <div class="tab-pane fade" id="v-pills-acoes-do-projeto" role="tabpanel"
+      aria-labelledby="v-pills-acoes-do-projeto-tab" tabindex="0">
+      conteúdo das ações do projeto
+    </div>
+    <div class="tab-pane fade" id="v-pills-tutoriais-aulas" role="tabpanel"
+      aria-labelledby="v-pills-tutoriais-aulas-tab" tabindex="0">
+      conteúdo de tutoriais e aulas
+    </div>
+    <div class="tab-pane fade" id="v-pills-contato" role="tabpanel" aria-labelledby="v-pills-contato-tab" tabindex="0">
+      conteúdo de contato
+    </div>
+    <div class="tab-pane fade" id="v-pills-galeria-fotos" role="tabpanel" aria-labelledby="v-pills-galeria-fotos-tab"
+      tabindex="0">
+      conteúdo da galeria de fotos
+    </div>
+    <div class="tab-pane fade" id="v-pills-parceiros" role="tabpanel" aria-labelledby="v-pills-parceiros-tab"
+      tabindex="0">
+      conteúdo de parceiros
+    </div>
+  </div>
+</body>
+
 </html>
