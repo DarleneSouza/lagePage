@@ -88,3 +88,13 @@ body {
   border-radius: 10px;
 }
 /* fim do conteúdo da home */
+
+/* conteudo de tutoriais e aulas */
+.material {
+  height: 50%;
+  max-width: 50%;
+}
+.video {
+  max-width: 100%;
+  height: 200px;
+}
