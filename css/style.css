@@ -90,9 +90,8 @@ body {
 /* fim do conteúdo da home */
 
 /* conteudo de tutoriais e aulas */
-.material {
-  height: 50%;
-  max-width: 50%;
+.card-img-top {
+  width: 50%;
 }
 .video {
   max-width: 100%;
