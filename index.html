@@ -21,7 +21,7 @@
       <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="img/logo_libertaMinas.png" alt="Logo" width="80" height="70" class="d-inline-block align-text-center rounded-circle">
-            ROBÔS PARA O ENSINO
+            <span class="ms-3">ROBÔS PARA O ENSINO</span>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -40,9 +40,6 @@
                 </li>
                 <li class="nav-item col-sm-12 col-xxl-auto p-2" role="presentation">
                   <button class="nav-link" id="pills-equipe-tab" data-bs-toggle="pill" data-bs-target="#pills-equipe" type="button" role="tab" aria-controls="pills-equipe" aria-selected="false">Equipe</button>
-                </li>
-                <li class="nav-item col-sm-12 col-xxl-auto p-2" role="presentation">
-                  <button class="nav-link" id="pills-materiais-tab" data-bs-toggle="pill" data-bs-target="#pills-materiais" type="button" role="tab" aria-controls="pills-materiais" aria-selected="false">Materiais</button>
                 </li>
                 <li class="nav-item col-sm-12 col-xxl-auto p-2" role="presentation">
                   <button class="nav-link" id="pills-tutoriais-aulas-tab" data-bs-toggle="pill" data-bs-target="#pills-tutoriais-aulas" type="button" role="tab" aria-controls="pills-tutoriais-aulas" aria-selected="false">Tutoriais e Aulas</button>
@@ -262,7 +259,76 @@
     <div class="tab-pane fade" id="pills-acoes-do-projeto" role="tabpanel" aria-labelledby="pills-acoes-do-projeto-tab" tabindex="0">...</div>
     <div class="tab-pane fade" id="pills-equipe" role="tabpanel" aria-labelledby="pills-equipe-tab" tabindex="0">...</div>
     <div class="tab-pane fade" id="pills-materiais" role="tabpanel" aria-labelledby="pills-materiais-tab" tabindex="0">...</div>
-    <div class="tab-pane fade" id="pills-tutoriais-aulas" role="tabpanel" aria-labelledby="pills-tutoriais-aulas-tab" tabindex="0">...</div>
+    <div class="tab-pane fade" id="pills-tutoriais-aulas" role="tabpanel" aria-labelledby="pills-tutoriais-aulas-tab" tabindex="0">
+      <!-- inicio tutoriais e aulas -->
+      <h1>Materiais</h1>
+      <div class="card-group  mb-5" >
+        <div class="card align-items-center" >
+          <img src="./img/lego45544-45560-ev3-500x500.jpg" class="card-img-top material"    alt="...">
+          <div class="card-body">
+            <h5 class="card-title">LEGO Mindstorms</h5>
+            <p class="card-text">LEGO Mindstorms Education EV3 é uma linha de brinquedo tecnológico LEGO Education, do grupo LEGO criado por Seymour Papert, lançada comercialmente em 1998, voltada para a educação tecnológica e, o desenvolvimento criativo e crítico infanto-juvenil, usando o sistema de aprendizado tecnológico STEM.</p>
+            <a href="./pdf/Oficina de Lego.pdf" target="_blank" class="btn btn-primary">Tutorial LEGO </a>
+          </div>
+        </div>
+        <div class="card align-items-center">
+          <img src="./img/Elego-uno-projeto-o-mais-completo-kit-de-partida-para-arduino-uno-r3-mega2560-nano-com.jpg_Q90.jpg_.png" class="card-img-top material"   alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Arduino</h5>
+            <p class="card-text">Arduino é uma plataforma de prototipagem eletrônica de hardware livre e de placa única, projetada com um microcontrolador Atmel AVR com suporte de entrada/saída embutido, uma linguagem de programação padrão, a qual tem origem em Wiring, e é essencialmente C/C++. </p>
+            <a href="./pdf/OficinaArduino-S4A.pdf" target="_blank" class="btn btn-primary mt-4">Tutorial Arduíno</a>
+          </div>
+        </div>
+        <div class="card align-items-center">
+          <img src="./img/15200_1.jpg" class="card-img-top material"  alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Itty Bitty Buggy </h5>
+            <p class="card-text">O Itty Bitty Buggy é um brinquedo robótico programável em blocos baseada em Scratch (linguagem de programação criada pelo MIT). Um usuário pode adicionar funções de controle remoto, capacidade de reconhecimento de cores e controle de voz. 
+            </p>
+            <a href="./pdf/OFICINA ROBÓTICA BUGGY.pdf" target="_blank" class="btn btn-primary mt-4">Tutorial Itty Buggy</a>
+          </div>
+        </div>
+      </div>
+      <h1>Aulas</h1>
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <iframe  class="video"  src="https://www.youtube.com/embed/6md8xoKe8eU" title="O que é Arduino?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="card-body">
+              <h5 class="card-title">Video aula:</h5>
+              <p class="card-text">O que é Arduíno</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <iframe class="video" src="https://www.youtube.com/embed/Jyledbmme6M" title="Aplicações do Arduino." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            <div class="card-body">
+              <h5 class="card-title">Video aula:</h5>
+              <p class="card-text">Aplicações do Arduíno</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <iframe class="video" src="https://www.youtube.com/embed/BlhIPF-tK0k" title="Pisca Led" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            <div class="card-body">
+              <h5 class="card-title">Video aula:</h5>
+              <p class="card-text">Exemplo Pisca-Led</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <iframe class="video" src="https://www.youtube.com/embed/fmz5k8PsCS4" title="Semáforo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="card-body">
+              <h5 class="card-title">Video aula:</h5>
+              <p class="card-text">Exemplo Semáfaro</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    <!-- fim tutoriais e aulas -->
+    </div>
     <div class="tab-pane fade" id="pills-galeria-fotos" role="tabpanel" aria-labelledby="pills-galeria-fotos-tab" tabindex="0">...</div>
     <div class="tab-pane fade" id="pills-parceiros" role="tabpanel" aria-labelledby="pills-parceiros-tab" tabindex="0">...</div>
     <div class="tab-pane fade" id="pills-contato" role="tabpanel" aria-labelledby="pills-contato-tab" tabindex="0">...</div>
