@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto Robôs para o Ensino</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/style.css" />
 
     <link
       rel="icon"
@@ -23,9 +22,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
     />
   </head>
-  <body>
+  <body class="mt-5 mx-3">
     <div class="container-fluid">
-      <nav class="navbar navbar-expand-xxl bg-light fixed-top">
+      <nav
+        class="navbar navbar-expand-xxl fixed-top navbar-dark"
+        style="background-color: #050b2f"
+      >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img
@@ -34,8 +36,9 @@
               width="80"
               height="70"
               class="d-inline-block align-text-center rounded-circle"
+              style="border: 3px solid #bf272e"
             />
-            <span class="ms-3">ROBÔS PARA O ENSINO</span>
+            <span class="ms-3 text-light">ROBÔS PARA O ENSINO</span>
           </a>
           <button
             class="navbar-toggler"
@@ -52,7 +55,7 @@
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
-            <div class="offcanvas-header">
+            <div class="offcanvas-header" style="background-color: #050b2fb4">
               <button
                 type="button"
                 class="btn-close"
@@ -60,7 +63,10 @@
                 aria-label="Close"
               ></button>
             </div>
-            <div class="offcanvas-body m-0">
+            <div
+              class="offcanvas-body m-0 text-light"
+              style="background-color: #050b2f"
+            >
               <ul
                 class="nav nav-pills mb-3 ms-auto row"
                 id="pills-tab"
@@ -71,7 +77,7 @@
                   role="presentation"
                 >
                   <button
-                    class="nav-link active"
+                    class="nav-link text-light active"
                     id="pills-home-tab"
                     data-bs-toggle="pill"
                     data-bs-target="#pills-home"
@@ -88,7 +94,7 @@
                   role="presentation"
                 >
                   <button
-                    class="nav-link"
+                    class="nav-link text-light"
                     id="pills-acoes-do-projeto-tab"
                     data-bs-toggle="pill"
                     data-bs-target="#pills-acoes-do-projeto"
@@ -105,7 +111,7 @@
                   role="presentation"
                 >
                   <button
-                    class="nav-link"
+                    class="nav-link text-light"
                     id="pills-equipe-tab"
                     data-bs-toggle="pill"
                     data-bs-target="#pills-equipe"
@@ -122,7 +128,7 @@
                   role="presentation"
                 >
                   <button
-                    class="nav-link"
+                    class="nav-link text-light"
                     id="pills-tutoriais-aulas-tab"
                     data-bs-toggle="pill"
                     data-bs-target="#pills-tutoriais-aulas"
@@ -139,7 +145,7 @@
                   role="presentation"
                 >
                   <button
-                    class="nav-link"
+                    class="nav-link text-light"
                     id="pills-galeria-fotos-tab"
                     data-bs-toggle="pill"
                     data-bs-target="#pills-galeria-fotos"
@@ -156,7 +162,7 @@
                   role="presentation"
                 >
                   <button
-                    class="nav-link"
+                    class="nav-link text-light"
                     id="pills-parceiros-tab"
                     data-bs-toggle="pill"
                     data-bs-target="#pills-parceiros"
@@ -173,7 +179,7 @@
                   role="presentation"
                 >
                   <button
-                    class="nav-link"
+                    class="nav-link text-light"
                     id="pills-contato-tab"
                     data-bs-toggle="pill"
                     data-bs-target="#pills-contato"
@@ -240,7 +246,7 @@
                   <div class="carousel-item active">
                     <img
                       src="./img/entrada_IF.png"
-                      class="d-block w-100"
+                      class="d-block w-100 rounded-3"
                       alt="entrada IF"
                     />
                     <div class="carousel-caption d-none d-md-block">
@@ -254,7 +260,7 @@
                   <div class="carousel-item">
                     <img
                       src="./img/capa-autoboots.png"
-                      class="d-block w-100"
+                      class="d-block w-100 rounded-3"
                       alt="capa autoboots"
                     />
                     <div class="carousel-caption d-none d-md-block">
@@ -267,8 +273,8 @@
                   </div>
                   <div class="carousel-item">
                     <img
-                      src="./img/banner-GSA (1).jpg"
-                      class="d-block w-100"
+                      src="./img/liberta.jpeg"
+                      class="d-block w-100 rounded-3"
                       alt="Liberta Minas"
                     />
                     <div class="carousel-caption d-none d-md-block">
@@ -307,7 +313,7 @@
               </div>
             </div>
           </div>
-          <div class="card my-6 bg-light mb-5 p-4" id="if">
+          <div class="card border-primary my-6 bg-light mb-5 p-4" id="if">
             <div class="row g-0 align-items-center">
               <div class="col-xl-4">
                 <img src="./img/IFSULDEMINAS.png" class="img-fluid" alt="..." />
@@ -349,7 +355,10 @@
               </div>
             </div>
           </div>
-          <div class="card mb-6 bg-light mb-5 p-4" id="autoboots">
+          <div
+            class="card border-primary mb-6 bg-light mb-5 p-4"
+            id="autoboots"
+          >
             <div class="row g-0 justify-content-center">
               <div class="col-xl-8">
                 <div class="card-body">
@@ -431,7 +440,7 @@
               </div>
             </div>
           </div>
-          <div class="card mb-6 bg-light mb-5 p-4" id="liberta">
+          <div class="card border-primary mb-6 bg-light mb-5 p-4" id="liberta">
             <div class="row g-0">
               <div class="col-xl-4">
                 <img
@@ -513,15 +522,21 @@
             Oficinas do Projeto Robôs para o Ensino - Liberta Minas
           </h2>
           <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="card w-100 mb-3 align-items-center border-primary">
-                <img
-                  src="./ofinas/oficina-1.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+              <div class="card w-100 h-100 border-primary">
+                <div class="card-header">
+                  <h2 class="card-title text-center">
+                    Oficina do dia: 01/04/2022
+                  </h2>
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title">Oficina do dia: 01/04/2022</h5>
+                  <img
+                    src="./ofinas/oficina-1.jpg"
+                    class="w-100 h-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-footer h-25">
                   <p class="card-text">
                     Oficina de Robótica com Lego para os novos integrantes do
                     grupo AUTOBOTS.
@@ -529,15 +544,21 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="card w-100 mb-3 align-items-center border-primary">
-                <img
-                  src="./ofinas/oficina-2.webp"
-                  class="card-img-top"
-                  alt="..."
-                />
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+              <div class="card w-100 h-100 border-primary">
+                <div class="card-header">
+                  <h2 class="card-title text-center">
+                    Oficina do dia: 20/04/2022
+                  </h2>
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title">Oficina do dia: 20/04/2022</h5>
+                  <img
+                    src="./ofinas/oficina-2.webp"
+                    class="w-100 h-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-footer h-25">
                   <p class="card-text">
                     Oficina de Arduíno para os alunos dos cursos Técnico em
                     Informática e Sistemas de Informação.
@@ -545,15 +566,21 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="card w-100 mb-3 align-items-center border-primary">
-                <img
-                  src="./ofinas/oficina-3.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+              <div class="card w-100 h-100 border-primary">
+                <div class="card-header">
+                  <h2 class="card-title text-center">
+                    Oficina do dia: 13/05/2022
+                  </h2>
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title">Oficina do dia: 13/05/2022</h5>
+                  <img
+                    src="./ofinas/oficina-3.jpg"
+                    class="w-100 h-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-footer h-25">
                   <p class="card-text">
                     Oficina de Robótica Educativa para os estudantes da Escola
                     Estadual São Marcos de Poço Fundo.
@@ -561,15 +588,21 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="card w-100 mb-3 align-items-center border-primary">
-                <img
-                  src="./ofinas/oficina-4.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+              <div class="card w-100 h-100 border-primary">
+                <div class="card-header">
+                  <h2 class="card-title text-center">
+                    Oficina do dia: 27/05/2022
+                  </h2>
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title">Oficina do dia: 27/05/2022</h5>
+                  <img
+                    src="./ofinas/oficina-4.jpg"
+                    class="w-100 h-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-footer h-25">
                   <p class="card-text">
                     Oficina de Robótica Educativa para os estudantes da Escola
                     Estadual Gabriel Odorico.
@@ -577,15 +610,21 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="card w-100 mb-3 align-items-center border-primary">
-                <img
-                  src="./ofinas/oficina-5.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+              <div class="card w-100 h-100 border-primary">
+                <div class="card-header">
+                  <h2 class="card-title text-center">
+                    Oficina do dia: 03/06/2022
+                  </h2>
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title">Oficina do dia: 03/06/2022</h5>
+                  <img
+                    src="./ofinas/oficina-5.jpg"
+                    class="w-100 h-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-footer h-25">
                   <p class="card-text">
                     Oficina de Robótica Educativa para os alunos da Escola
                     Estadual de Douradinho.
@@ -593,15 +632,21 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="card w-100 mb-3 align-items-center border-primary">
-                <img
-                  src="./ofinas/oficina-6.webp"
-                  class="card-img-top"
-                  alt="..."
-                />
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+              <div class="card w-100 h-100 border-primary">
+                <div class="card-header">
+                  <h2 class="card-title text-center">
+                    Oficina do dia: 15/06/2022
+                  </h2>
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title">Oficina do dia: 15/06/2022</h5>
+                  <img
+                    src="./ofinas/oficina-6.webp"
+                    class="w-100 h-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-footer h-25">
                   <p class="card-text">
                     Oficina de Robótica Educativa para os alunos da Escola
                     Estadual João de Paula Caproni de Carvalhópolis.
@@ -609,15 +654,21 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="card w-100 mb-3 align-items-center border-primary">
-                <img
-                  src="./ofinas/oficina-7.webp"
-                  class="card-img-top"
-                  alt="..."
-                />
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+              <div class="card w-100 h-100 border-primary">
+                <div class="card-header">
+                  <h2 class="card-title text-center">
+                    Oficina do dia: 24/06/2022
+                  </h2>
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title">Oficina do dia: 24/06/2022</h5>
+                  <img
+                    src="./ofinas/oficina-7.webp"
+                    class="w-100 h-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-footer h-25">
                   <p class="card-text">
                     Oficina de Robótica Educativa para os alunos da Escola
                     Estadual Padre Pisccinini de Paraguaçu.
@@ -625,15 +676,21 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="card w-100 mb-3 align-items-center border-primary">
-                <img
-                  src="./ofinas/oficina-8.webp"
-                  class="card-img-top"
-                  alt="..."
-                />
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+              <div class="card w-100 h-100 border-primary">
+                <div class="card-header">
+                  <h2 class="card-title text-center">
+                    Oficina do dia: 29/06/2022
+                  </h2>
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title">Oficina do dia: 29/06/2022</h5>
+                  <img
+                    src="./ofinas/oficina-8.webp"
+                    class="w-100 h-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-footer h-25">
                   <p class="card-text">
                     Oficina de Robótica Educativa para os alunos da Escola
                     Municipal de Guaipava.
@@ -641,15 +698,21 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="card w-100 mb-3 align-items-center border-primary">
-                <img
-                  src="./ofinas/oficina-9.webp"
-                  class="card-img-top"
-                  alt="..."
-                />
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+              <div class="card w-100 h-100 border-primary">
+                <div class="card-header">
+                  <h2 class="card-title text-center">
+                    Oficina do dia: 16/08/2022
+                  </h2>
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title">Oficina do dia: 16/08/2022</h5>
+                  <img
+                    src="./ofinas/oficina-9.webp"
+                    class="w-100 h-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-footer h-25">
                   <p class="card-text">
                     Oficina de Robótica Pedagógica para os estudantes da Escola
                     Estadual de Espírito Santo do Dourado.
@@ -657,15 +720,21 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="card w-100 mb-3 align-items-center border-primary">
-                <img
-                  src="./ofinas/oficina-10.webp"
-                  class="card-img-top"
-                  alt="..."
-                />
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+              <div class="card w-100 h-100 border-primary">
+                <div class="card-header">
+                  <h2 class="card-title text-center">
+                    Oficina do dia: 06/09/2022
+                  </h2>
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title">Oficina do dia: 06/09/2022</h5>
+                  <img
+                    src="./ofinas/oficina-10.webp"
+                    class="w-100 h-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-footer h-25">
                   <p class="card-text">
                     Oficina de Robótica móvel com a galera da Escola Estadual
                     Gabriel Odorico.
@@ -673,30 +742,42 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="card w-100 mb-3 align-items-center border-primary">
-                <img
-                  src="./ofinas/oficina-11.webp"
-                  class="card-img-top"
-                  alt="..."
-                />
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+              <div class="card w-100 h-100 border-primary">
+                <div class="card-header">
+                  <h2 class="card-title text-center">
+                    Oficina do dia: 14/09/2022
+                  </h2>
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title">Oficina do dia: 14/09/2022</h5>
+                  <img
+                    src="./ofinas/oficina-11.webp"
+                    class="w-100 h-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-footer h-25">
                   <p class="card-text">
                     Oficina de Robótica Educativa na Escola de Guaipava.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="card w-100 mb-3 align-items-center border-primary">
-                <img
-                  src="./ofinas/oficina-12.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+              <div class="card w-100 h-100 border-primary">
+                <div class="card-header">
+                  <h2 class="card-title text-center">
+                    Oficina do dia: 29/09/2022
+                  </h2>
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title">Oficina do dia: 29/09/2022</h5>
+                  <img
+                    src="./ofinas/oficina-12.jpg"
+                    class="w-100 h-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-footer h-25">
                   <p class="card-text">
                     Oficina de Robótica Educativa na Escola Estadual São Marcos
                     em Poço Fundo.
@@ -704,15 +785,21 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="card w-100 mb-3 align-items-center border-primary">
-                <img
-                  src="./ofinas/oficina-13.webp"
-                  class="card-img-top"
-                  alt="..."
-                />
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+              <div class="card w-100 h-100 border-primary">
+                <div class="card-header">
+                  <h2 class="card-title text-center">
+                    Oficina do dia: 18/11/2022
+                  </h2>
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title">Oficina do dia: 18/11/2022</h5>
+                  <img
+                    src="./ofinas/oficina-13.webp"
+                    class="w-100 h-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-footer h-25">
                   <p class="card-text">
                     Oficina de Robótica com Lego Mindstorms para os alunos da
                     escola de Douradinho.
@@ -729,8 +816,8 @@
           aria-labelledby="pills-equipe-tab"
           tabindex="0"
         >
-          <section id="equipe" class="container">
-            <h2 style="color: #1e90ff; text-align: center">
+          <section id="equipe">
+            <h2 style="color: #050b2f; text-align: center">
               Alguns Membros da Equipe AUTOBOTS
             </h2>
             <img
@@ -738,206 +825,146 @@
               class="img-fluid mb-5 mt-3 rounded"
               alt="Responsive image"
             />
-            <h2 style="color: #1e90ff; text-align: center">
+            <h2 style="color: #050b2f; text-align: center">
               Equipe do Projeto Robôs para Ensino - Liberta Minas
             </h2>
             <div class="row mt-3">
-              <div class="col-md-6 col-xl-4">
-                <div class="card border-primary mb-3">
+              <div class="col-md-6 col-xl-4 mb-3">
+                <div class="card border-primary h-100">
                   <div class="card-header fs-5"><b>Dayane Núbia</b></div>
                   <div class="card-body">
+                    <div class="row justify-content-center">
+                      <div class="col-6">
+                        <img
+                          src="fotos/day.jpg"
+                          class="img-fluid w-100 rounded-circle"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer h-75">
                     <p class="card-text">
                       Graduanda em Sistema de Informação | Técnica em
                       Informática para Internet - IFSP SCL | Membro das Meninas
                       Digitais | Membro AUTOBOTS | Estagiária da CPA -
                       IFSULDEMINAS
                     </p>
-                    <p>
-                      <button
-                        class="btn btn-primary"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseDayane"
-                        aria-expanded="false"
-                        aria-controls="collapseExample"
-                      >
-                        Foto
-                      </button>
-                    </p>
-                    <div class="collapse" id="collapseDayane">
-                      <div class="card card-body">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-xl-4 mb-3">
+                <div class="card border-primary h-100">
+                  <div class="card-header fs-5"><b>Pedro Franco</b></div>
+                  <div class="card-body">
+                    <div class="row justify-content-center">
+                      <div class="col-6">
                         <img
-                          src="fotos/day.jpg"
-                          class="img-fluid rounded-start"
+                          src="./fotos/pedro.jpg"
+                          class="img-fluid w-100 rounded-circle"
                           alt="..."
                         />
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-
-              <div class="col-md-6 col-xl-4">
-                <div class="card border-primary mb-3">
-                  <div class="card-header fs-5"><b>Pedro Franco</b></div>
-                  <div class="card-body">
+                  <div class="card-footer h-75">
                     <p class="card-text">
                       Graduando em Sistemas Informação | Bolsista no Projeto de
                       Robótica do Campus em Machado | Membro do AUTOBOTS.
                     </p>
-                    <p>
-                      <button
-                        class="btn btn-primary"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapsePedro"
-                        aria-expanded="false"
-                        aria-controls="collapseExample"
-                      >
-                        Foto
-                      </button>
-                    </p>
-                    <div class="collapse" id="collapsePedro">
-                      <div class="card card-body">
-                        <img
-                          src="./fotos/pedro.jpg"
-                          class="img-fluid rounded-start"
-                          alt="..."
-                        />
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-md-6 col-xl-4">
-                <div class="card border-primary mb-3">
+              <div class="col-md-6 col-xl-4 mb-3">
+                <div class="card border-primary h-100">
                   <div class="card-header fs-5"><b>Luis Henrique</b></div>
                   <div class="card-body">
-                    <p class="card-text">
-                      Graduando em Sistema de Informação | Técnico em
-                      Informática | Membro AUTOBOTS | Estagiário de TI - Coopama
-                    </p>
-                    <p>
-                      <button
-                        class="btn btn-primary"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseLuis"
-                        aria-expanded="false"
-                        aria-controls="collapseExample"
-                      >
-                        Foto
-                      </button>
-                    </p>
-                    <div class="collapse" id="collapseLuis">
-                      <div class="card card-body">
+                    <div class="row justify-content-center">
+                      <div class="col-6">
                         <img
                           src="fotos/Luis.jpg"
-                          class="img-fluid rounded-start"
+                          class="img-fluid w-100 rounded-circle"
                           alt="..."
                         />
                       </div>
                     </div>
                   </div>
+                  <div class="card-footer h-75">
+                    <p class="card-text">
+                      Graduando em Sistema de Informação | Técnico em
+                      Informática | Membro AUTOBOTS | Estagiário de TI - Coopama
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-6 col-xl-4">
-                <div class="card border-primary mb-3">
+              <div class="col-md-6 col-xl-4 mb-3">
+                <div class="card border-primary h-100">
                   <div class="card-header fs-5"><b>Matheus Franco</b></div>
                   <div class="card-body">
+                    <div class="row justify-content-center">
+                      <div class="col-6">
+                        <img
+                          src="fotos/matheus.jpg"
+                          class="img-fluid w-100 rounded-circle"
+                          alt="..."
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer h-75">
                     <p class="card-text">
                       Docente no curso de Sistema de Informação | Coordenador do
                       curso de Sistema de Informação | Coordenador do Projeto
                       Autoboots | Coordenador do Projeto Robôs para o Ensino
                     </p>
-                    <p>
-                      <button
-                        class="btn btn-primary"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseMatheus"
-                        aria-expanded="false"
-                        aria-controls="collapseExample"
-                      >
-                        Foto
-                      </button>
-                    </p>
-                    <div class="collapse" id="collapseMatheus">
-                      <div class="card card-body">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-4 mb-3">
+                <div class="card border-primary h-100">
+                  <div class="card-header fs-5"><b>Ivam Novais</b></div>
+                  <div class="card-body">
+                    <div class="row justify-content-center">
+                      <div class="col-6">
                         <img
-                          src="fotos/matheus.jpg"
-                          class="img-fluid rounded-start"
+                          src="fotos/ivam.jpeg"
+                          class="img-fluid w-100 rounded-circle"
                           alt="..."
                         />
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-xl-4">
-                <div class="card border-primary mb-3">
-                  <div class="card-header fs-5"><b>Ivam Novais</b></div>
-                  <div class="card-body">
+                  <div class="card-footer h-75">
                     <p class="card-text">
                       Graduando em Sistema de Informação | Analista de
                       desenvolvimento de sistemas - Youx group Membro das
                       Meninas Digitais | Membro AUTOBOTS
                     </p>
-                    <p>
-                      <button
-                        class="btn btn-primary"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseIvam"
-                        aria-expanded="false"
-                        aria-controls="collapseExample"
-                      >
-                        Foto
-                      </button>
-                    </p>
-                    <div class="collapse" id="collapseIvam">
-                      <div class="card card-body">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-4 mb-3">
+                <div class="card border-primary h-100">
+                  <div class="card-header fs-5"><b>Darlene Souza</b></div>
+                  <div class="card-body">
+                    <div class="row justify-content-center">
+                      <div class="col-6">
                         <img
-                          src="fotos/ivam.jpeg"
-                          class="img-fluid rounded-start"
+                          src="fotos/darlene.jpeg"
+                          class="img-fluid w-100 rounded-circle"
                           alt="..."
                         />
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-xl-4">
-                <div class="card border-primary mb-3">
-                  <div class="card-header fs-5"><b>Darlene Souza</b></div>
-                  <div class="card-body">
+                  <div class="card-footer h-75">
                     <p class="card-text">
                       Graduanda em Sistema de Informação | Membro das Meninas
                       Digitais | Membro AUTOBOTS | Estagiária em Analista de
                       Desenvolvimento de Sistemas - Youx Group
                     </p>
-                    <p>
-                      <button
-                        class="btn btn-primary"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseDarlene"
-                        aria-expanded="false"
-                        aria-controls="collapseExample"
-                      >
-                        Foto
-                      </button>
-                    </p>
-                    <div class="collapse" id="collapseDarlene">
-                      <div class="card card-body">
-                        <img
-                          src="fotos/darlene.jpeg"
-                          class="img-fluid rounded-start"
-                          alt="..."
-                        />
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -955,14 +982,16 @@
           <h1 style="color: #1e90ff" class="mb-3">Materiais</h1>
           <div class="row">
             <div class="col-lg-4 col-sm-12">
-              <div class="card w-100 mb-3 align-items-center border-primary">
-                <img
-                  src="./img/arduino.png"
-                  class="card-img-top img-materiais"
-                  alt="..."
-                />
+              <div class="card w-100 mb-3 border-primary h-100">
+                <div class="card-header">
+                  <h2 class="card-title text-center">Arduino</h2>
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title">Arduino</h5>
+                  <div class="row justify-content-center">
+                    <img src="./img/arduino.png" class="w-50" alt="..." />
+                  </div>
+                </div>
+                <div class="card-footer h-50">
                   <p class="card-text">
                     Arduino é uma plataforma de prototipagem eletrônica de
                     hardware livre e de placa única, projetada com um
@@ -973,21 +1002,24 @@
                   <a
                     href="./pdf/OficinaArduino-S4A.pdf"
                     target="_blank"
-                    class="btn btn-primary"
+                    class="btn btn-primary mt-4 border-0"
+                    style="background-color: #bf272e"
                     >Tutorial Arduíno</a
                   >
                 </div>
               </div>
             </div>
             <div class="col-lg-4 col-sm-12">
-              <div class="card w-100 mb-3 align-items-center border-primary">
-                <img
-                  src="./img/lego.jpg"
-                  class="card-img-top img-materiais"
-                  alt="..."
-                />
+              <div class="card w-100 border-primary h-100">
+                <div class="card-header">
+                  <h2 class="card-title text-center">LEGO Mindstorms</h2>
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title">LEGO Mindstorms</h5>
+                  <div class="row justify-content-center">
+                    <img src="./img/lego.jpg" class="w-50" alt="..." />
+                  </div>
+                </div>
+                <div class="card-footer h-50">
                   <p class="card-text">
                     LEGO Mindstorms Education EV3 é uma linha de brinquedo
                     tecnológico LEGO Education, do grupo LEGO criado por Seymour
@@ -999,21 +1031,24 @@
                   <a
                     href="./pdf/Oficina de Lego.pdf"
                     target="_blank"
-                    class="btn btn-primary"
+                    class="btn btn-primary border-0"
+                    style="background-color: #bf272e"
                     >Tutorial LEGO</a
                   >
                 </div>
               </div>
             </div>
             <div class="col-lg-4 col-sm-12">
-              <div class="card w-100 mb-3 align-items-center border-primary">
-                <img
-                  src="./img/itty buggy.jpg"
-                  class="card-img-top img-materiais"
-                  alt="..."
-                />
+              <div class="card w-100 mb-3 border-primary h-100">
+                <div class="card-header">
+                  <h2 class="card-title text-center">Itty Bitty Buggy</h2>
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title">Itty Bitty Buggy</h5>
+                  <div class="row justify-content-center">
+                    <img src="./img/itty buggy.jpg" class="w-50" alt="..." />
+                  </div>
+                </div>
+                <div class="card-footer h-50">
                   <p class="card-text">
                     O Itty Bitty Buggy é um brinquedo robótico programável em
                     blocos baseada em Scratch (linguagem de programação criada
@@ -1024,19 +1059,20 @@
                   <a
                     href="./pdf/OFICINA ROBÓTICA BUGGY.pdf"
                     target="_blank"
-                    class="btn btn-primary"
+                    class="btn btn-primary mt-4 border-0"
+                    style="background-color: #bf272e"
                     >Tutorial Itty Buggy</a
                   >
                 </div>
               </div>
             </div>
           </div>
-          <h1 style="color: #1e90ff" class="mt-5 mb-3">Aulas</h1>
+          <h1 style="color: #050b2f" class="mt-5 mb-3">Aulas</h1>
           <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="card w-100 mb-3">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+              <div class="card w-100 h-100 mb-3">
                 <iframe
-                  class="video"
+                  class="w-100 h-100"
                   src="https://www.youtube.com/embed/6md8xoKe8eU"
                   title="O que é Arduino?"
                   frameborder="0"
@@ -1049,10 +1085,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="card w-100 mb-3">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+              <div class="card w-100 h-100 mb-3">
                 <iframe
-                  class="video"
+                  class="w-100 h-100"
                   src="https://www.youtube.com/embed/Jyledbmme6M"
                   title="Aplicações do Arduino."
                   frameborder="0"
@@ -1065,10 +1101,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="card w-100 mb-3">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+              <div class="card w-100 h-100 mb-3">
                 <iframe
-                  class="video"
+                  class="w-100 h-100"
                   src="https://www.youtube.com/embed/BlhIPF-tK0k"
                   title="Pisca Led"
                   frameborder="0"
@@ -1081,10 +1117,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="card w-100 mb-3">
+            <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+              <div class="card w-100 h-100 mb-3">
                 <iframe
-                  class="video"
+                  class="w-100 h-100"
                   src="https://www.youtube.com/embed/fmz5k8PsCS4"
                   title="Semáforo"
                   frameborder="0"
@@ -1865,7 +1901,7 @@
             LIBERTA MINAS pela concessão do fomento e ao IFSULDEMINAS - Campus
             Machado pelo apoio ao projeto.
           </p>
-          <div class="card mb-6 bg-light mb-5 p-4">
+          <div class="card border-primary mb-6 bg-light mb-5 p-4">
             <div class="row g-0">
               <div class="col-xl-4">
                 <img
@@ -1888,7 +1924,7 @@
               </div>
             </div>
           </div>
-          <div class="card mb-6 bg-light">
+          <div class="card border-primary mb-6 bg-light">
             <div class="row g-0">
               <div class="col-xl-4">
                 <img
@@ -1926,7 +1962,7 @@
           <h1 class="mb-4">Contato</h1>
           <div class="embed-responsive embed-responsive-16by9">
             <iframe
-              class="embed-responsive-item"
+              class="embed-responsive-item rounded-3"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29656.593998163284!2d-45.890664!3d-21.699841!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9ecc3a078d5481f5!2sIFSULDEMINAS%20-%20Campus%20Machado!5e0!3m2!1spt-BR!2sbr!4v1670013976221!5m2!1spt-BR!2sbr"
               width="100%"
               height="300px"
